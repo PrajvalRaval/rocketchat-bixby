@@ -53,13 +53,13 @@
 
   + Change the **Enable** to **true**.
   
-  + In the URL field enter `https://yourserverurl/api/v1` 
+  + In the URL field enter: `https://{ YOUR SERVER URL }/api/v1` 
   
   + Switch **Merge users** to **true**.
 
   + Click on **Save Changes** on top.
   
-11. Go to `capsule.properties` file and add following values:
+11. Go to `capsule.properties` file in Bixby IDE and add following values:
 
     ```
     config.default.server.url={ YOUR SERVER URL }
