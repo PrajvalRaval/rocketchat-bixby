@@ -41,7 +41,7 @@
   + In the **Config & Secrets** tab of your capsule's page on the Developer Center, **add a new secret** under Dev:
 
     + Name: **key** 
-    + Value: **Generated Client Secret Value In The OAuth App**
+    + Value: **Generated Client Secret Value From The OAuth App**
     
   + **Save and apply** the key.
     
