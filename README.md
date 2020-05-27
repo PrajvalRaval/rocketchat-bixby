@@ -8,8 +8,65 @@
 
 ---
 
-## Index
-* [Prerequisites](#prerequisites)
+## Setting Up The Capsule
+
+1. Fork and Clone this repo.
+
+2. Get started with the [Bixby Studio](https://bixbydevelopers.com/dev/docs/dev-guide/developers/ide).
+
+3. Open this repo in your Bixby IDE.
+
+4. If you haven't already, [create or join a team](https://bixbydevelopers.com/dev/docs/dev-guide/developers/managing-caps.managing-your-team#create-or-join-a-team) on the Bixby Developer Center.
+
+5. Change the id in the `capsule.bxb` file to match your organization namespace. For example, if your namespace is `acme`, change `example.rocketchat` to `acme.rocketchat`
+
+6. In your Rocket Chat server, go to *Three Dot Menu* -> *Administration* -> *OAuth Apps*.
+
+7. Click on *New Application* on top right. Now we need to give it an *Application Name* and a *Redirect URI*.
+
++ For Application name use "bixbyoauth".
+
++ For Redirect URI, use `https://<your-capsule-id>.oauth.aibixby.com/auth/external/cb`. 
+
+  + Replace `<your-capsule-id>` with your actual capsule ID, with the - dash character in place of the . period character. For example, if your capsule ID is `example.dice`, your redirect URI would be `https://example-dice.oauth.aibixby.com/auth/external/cb`.
+  
+8. You'll see it automatically generating Client ID, Client Secret, Authorization URL, and Access Token URL. Now copy these from the oauth app page and paste it in `authorization.bxb` file of the capsule.
+
++ For **client-id, authorize-endpoint and token-endpoint**, simply copy paste the values.
+
++ For **client-secret-key**, keep the value as `client-secret-key ("key")` and follow this steps:
+
+  + Register this capsule as `rocketchat` on the Developer Center.
+  
+  + In the **Config & Secrets** tab of your capsule's page on the Developer Center, **add a new secret** under Dev:
+
+    + Name: **key** 
+    + Value: **Generated Client Secret Value In The OAuth App**
+    
+  + **Save and apply** the key.
+    
+9. In Rocket Chat, go to **Administration** -> **OAuth** and on top right click on **Add custom OAuth**.
+
+10. Give an unique name in lower case for the custom oauth. For example enter "bixbyoauthservice". Click on **Send**. Copy and paste this name somewhere safe as we will be using it with our `capsule.properties` file.
+
+11. You will now be provided a few fields some of which will be prefilled. We only need to change a few:
+
+  + Change the **Enable** to **true**.
+  
+  + In the URL field enter `https://yourserverurl/api/v1` 
+  
+  + Switch **Merge users** to **true**.
+
+  + Click on **Save Changes** on top.
+  
+12. Go to `capsule.properties` file and add following values:
+
+    ```
+    config.default.server.url={ YOUR SERVER URL }
+    config.default.oauth.servicename={ OAUTH SERVICE NAME }
+    ```
+    
+13. Finally We Are Done! You can now use the simulator to run a query. For ex: Open Simulator and ask `send hello to general`.
 
 ---
 
