@@ -1,0 +1,3 @@
+text (channelName) {
+  description ("Concept to use wherever we are required to pass Channel Names.")
+}

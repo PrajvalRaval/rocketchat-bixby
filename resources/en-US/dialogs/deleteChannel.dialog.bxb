@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: deleteChannel (this)
+  template("#{title(this)}")
+}

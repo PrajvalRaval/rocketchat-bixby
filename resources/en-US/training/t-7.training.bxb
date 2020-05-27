@@ -1,0 +1,5 @@
+train (t-7r42kyzoqzrqqlggeaq6i16v2) {
+  utterance ("[g:sendMessage] send (The legacy training UI will be deprecated soon. Switch to the new training experience. Learn More)[v:textMessage] to (general)[v:channelName]")
+  plan (Y2Bh4C3LLNNLzi9K1QtJrShhUC4oSswqS8wpSgQSekX5ydmpJckZiSV6xal5Kb6pxcWJ6am4FQGJvLzUHL/EXDyKSoD2wExiZmBkYAKSDEAaBCEALgoA)
+  last-modified (1590584456670)
+}

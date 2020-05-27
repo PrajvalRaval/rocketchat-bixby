@@ -1,0 +1,17 @@
+action (sendMessage) {
+  type(Search)
+  description ("Action to send messages to public channels")
+  collect{
+    input(channelName) {
+      type (channelName)
+      min (Required) 
+      max (One)
+    }
+    input(textMessage) {
+      type (textMessage)
+      min (Required) 
+      max (One)
+    }
+  }
+  output(viv.core.Text)
+}

@@ -1,0 +1,3 @@
+text (textMessage) {
+  description ("Concept to use wherever we are required to pass Text Messages.")
+}

@@ -1,0 +1,12 @@
+action (createChannel) {
+  type(Search)
+  description ("Action that create a new public channel of given channel name")
+  collect{
+    input(channelName) {
+      type (channelName)
+      min (Required) 
+      max (One)
+    }
+  }
+  output(viv.core.Text)
+}

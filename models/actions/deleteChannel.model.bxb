@@ -1,0 +1,12 @@
+action (deleteChannel) {
+  type(Search)
+  description ("Action that deletes the given channel.")
+  collect{
+    input(channelName) {
+      type (channelName)
+      min (Required) 
+      max (One)
+    }
+  }
+  output(viv.core.Text)
+}

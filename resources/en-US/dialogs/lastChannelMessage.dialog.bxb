@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: lastChannelMessage (this)
+  template("#{title(this)}")
+}

@@ -1,0 +1,5 @@
+train (t-g6zh6ovvgfueojak8oopdj9gs) {
+  utterance ("[g:sendMessage] send (hello from bixby)[v:textMessage] to (general)[v:channelName]")
+  plan (Y2Bh4C3LLNNLzi9K1QtJrShhUC4oSswqS8wpSgQSekX5ydmpJckZiSV6xal5Kb6pxcWJ6am4FQGJvLzUHL/EXDyKSoD2wExiZmBkYAKSDEAaBCEALgoA)
+  last-modified (1590583862525)
+}

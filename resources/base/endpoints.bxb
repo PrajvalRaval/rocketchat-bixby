@@ -1,0 +1,37 @@
+endpoints {
+  
+  action-endpoints {
+    action-endpoint (lastChannelMessage){
+      accepted-inputs ($vivContext,channelName)
+      local-endpoint (readLastMessage.js)
+      authorization {
+        user
+      }
+    }
+
+    action-endpoint (sendMessage){
+      accepted-inputs ($vivContext,textMessage,channelName)
+      local-endpoint (sendMessage.js)
+      authorization {
+        user
+      }
+    }
+
+    action-endpoint (createChannel){
+      accepted-inputs ($vivContext,channelName)
+      local-endpoint (createChannel.js)
+      authorization {
+        user
+      }
+    }
+
+    action-endpoint (deleteChannel){
+      accepted-inputs ($vivContext,channelName)
+      local-endpoint (deleteChannel.js)
+      authorization {
+        user
+      }
+    }
+
+  }
+}

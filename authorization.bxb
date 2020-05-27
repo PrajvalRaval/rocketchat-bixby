@@ -1,0 +1,10 @@
+authorization{
+  user{
+    oauth2-authorization-code ("Rocket Chat"){
+      client-id ("75JtkeQvY23aebxHb")
+      client-secret-key ("key")
+      authorize-endpoint ("https://bots.rocket.chat/oauth/authorize")
+      token-endpoint ("https://bots.rocket.chat/oauth/token")
+    }
+  }
+}

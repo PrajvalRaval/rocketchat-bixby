@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: createChannel (this)
+  template("#{title(this)}")
+}

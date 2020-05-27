@@ -1,0 +1,12 @@
+action (lastChannelMessage) {
+  type(Search)
+  description ("Action that reads latest message from asked channel")
+  collect{
+    input(channelName) {
+      type (channelName)
+      min (Required) 
+      max (One)
+    }
+  }
+  output(viv.core.Text)
+}

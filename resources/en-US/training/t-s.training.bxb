@@ -1,0 +1,5 @@
+train (t-s7tgrk2pnhgs3qpdbr7drrekk) {
+  utterance ("[g:sendMessage] send (hello)[v:textMessage] to (general)[v:channelName]")
+  plan (Y2Bh4C3LLNNLzi9K1QtJrShhUC4oSswqS8wpSgQSekX5ydmpJckZiSV6xal5Kb6pxcWJ6am4FQGJvLzUHL/EXDyKSoD2wExiZmBkYAKSDEAaBCEALgoA)
+  last-modified (1590583555042)
+}

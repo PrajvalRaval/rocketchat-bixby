@@ -1,0 +1,7 @@
+hints {
+  uncategorized{
+    hint ("Ask Rocket Chat, send hello to general")
+    hint ("Ask Rocket Chat, create channel test")
+    hint ("Ask Rocket Chat, read last message from general")
+  }
+}
