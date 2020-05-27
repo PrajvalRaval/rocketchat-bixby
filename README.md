@@ -59,7 +59,7 @@
 
   + Click on **Save Changes** on top.
   
-11. Go to `capsule.properties` file in Bixby IDE and add following values:
+11. In Bixby IDE, Go to **resources** -> **base** -> **capsule.properties** file and **add** following values:
 
     ```
     config.default.server.url={ YOUR SERVER URL }
