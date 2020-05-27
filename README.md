@@ -28,7 +28,7 @@
 
 + For Redirect URI, use `https://<your-capsule-id>.oauth.aibixby.com/auth/external/cb`. 
 
-  + Replace `<your-capsule-id>` with your actual capsule ID, with the - dash character in place of the . period character. For example, if your capsule ID is `example.dice`, your redirect URI would be `https://example-dice.oauth.aibixby.com/auth/external/cb`.
+  + Replace `<your-capsule-id>` with your actual capsule ID, with the `-`(dash) character in place of the `.` (period) character. For example, if your capsule ID is `example.dice`, your redirect URI would be `https://example-dice.oauth.aibixby.com/auth/external/cb`.
   
 8. You'll see it automatically generating Client ID, Client Secret, Authorization URL, and Access Token URL. Now copy these from the oauth app page and paste it in `authorization.bxb` file of the capsule.
 
